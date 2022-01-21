@@ -1,0 +1,33 @@
+html{
+    background-color: white!important;
+}
+body {
+    font-family: "Poppins", sans-serif;
+  }
+.thumbnail{
+    height: 200px;
+    text-align: center;
+}
+.thumbnail img{
+    height: 100%;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form p{
+    color: white;
+    margin: 0!important;
+}
+.color{
+    background-color: rgb(72, 171, 232);
+}
+.btn-default{
+    color: white;
+    text-decoration: none;
+}
+.btn-default:hover{
+    opacity: 0.6;
+    color: white;
+}

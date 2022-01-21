@@ -1,0 +1,29 @@
+{% extends 'zerowaste/post_list.html' %}
+{% load static %}
+
+{% block contents %}
+<form action="" method="POST" enctype="multipart/form-data">
+    <div class="container">
+        <div class="form-group p-3">
+            <p>{{ form.post_title.label }}：</p>
+            {{ form.post_title }}
+        </div>
+        <div class="form-group p-3">
+            <p>{{ form.post_price.label }}：</p>
+            {{ form.post_price }}
+        </div>
+        <div class="form-group p-3">
+            <p>{{ form.post_address.label }}：</p>
+            {{ form.post_address }}
+        </div>
+        <div class="custom-file p-3">
+            <p>{{ form.post_image.label }}：</p>
+            {{ form.post_image }}
+        </div>
+        <button type="submit" class="my-2 fadein fourth">送信</button>
+        <a href="{% url 'zerowaste:index' %}" class="my-2 fadein fourth">ホームへ戻る</a>
+    </div>
+        
+{% csrf_token %}
+</form>
+{% endblock %}

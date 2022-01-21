@@ -1,0 +1,32 @@
+{% extends "zerowaste/post_list.html" %}
+
+{% block contents %} 
+<div class="container py-5">
+	<h1>新規会員登録</h1>
+	<form method="POST" action="">
+		{% csrf_token %}
+		<!-- <label>ユーザーID</label>
+		{{ form.username }}
+		<label>パスワード</label>
+		{{ form.password1 }}
+		<label>パスワード(確認)</label>
+		{{ form.password2 }}
+		<button class="btn btn-primary my-3" type="submit">登録</button> -->
+		<div class="form-group p-3">
+            <p>{{ form.username.label }}：</p>
+            {{ form.username }}
+        </div>
+        <div class="form-group p-3">
+            <p>{{ form.password1.label }}：</p>
+            {{ form.password1 }}
+        </div>
+        <div class="form-group p-3">
+            <p>{{ form.password2.label }}：</p>
+            {{ form.password2 }}
+        </div>
+		<button class="my-2 fadein fourth" type="submit">登録</button>
+	</form>
+	<p class="text-center">既に会員登録済みの方はこちらから<a href="{% url 'zerowaste:login' %}">ログイン</a></p>
+</div>
+
+{% endblock %}

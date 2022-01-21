@@ -1,0 +1,19 @@
+.thumbnail{
+    height: 200px;
+    text-align: center;
+}
+.thumbnail img{
+    height: 100%;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form p{
+    color: white;
+    margin: 0!important;
+}
+.color{
+    color: rgb(72, 171, 232);
+}
